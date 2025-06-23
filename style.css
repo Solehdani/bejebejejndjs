@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(145deg, #0d1117, #111827);
+  border-bottom: 2px solid #1e3a8a;
+}
+
+header h1 {
+  color: #60a5fa;
+  font-size: 2.5rem;
+}
+
+header p {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+nav {
+  background-color: rgba(31, 41, 55, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 900px;
+}
+
+nav li {
+  transition: transform 0.2s ease;
+}
+
+nav li:hover {
+  transform: translateY(-2px);
+}
+
+nav a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #60a5fa;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.project-card {
+  background-color: rgba(30, 41, 59, 0.6);
+  border: 1px solid #1e3a8a;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+a {
+  color: #60a5fa;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #111827;
+  border-top: 2px solid #1e3a8a;
+  margin-top: 2rem;
+  color: #6b7280;
+}
+
+#skill {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  transition: transform 0.2s ease;
+}
+
+.skill-card img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+  color: #60a5fa;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+}
+
+#pendidikan {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.edu-container {
+  border-left: 3px solid #1e3a8a;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.edu-item {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.edu-item::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: #60a5fa;
+  border-radius: 50%;
+  border: 2px solid #1e3a8a;
+}
+
+.edu-item h3 {
+  color: #60a5fa;
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.edu-item p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+#kontak {
+  text-align: center;
+}
+
+.kontak-list {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  font-size: 1.5rem;
+}
+
+.kontak-list a {
+  color: #60a5fa;
+  transition: transform 0.2s ease;
+}
+
+.kontak-list a:hover {
+  transform: scale(1.2);
+  color: #3b82f6;
+}
+
+#tentang p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: #cbd5e1;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul {
+    padding: 1rem;
+  }
+
+  section,
+  #skill,
+  #pendidikan {
+    padding: 1.5rem 1rem;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+
+  .kontak-list {
+    gap: 1rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .skill-card img {
+    width: 50px;
+  }
+
+  .skill-card p {
+    font-size: 0.9rem;
+  }
+
+  .edu-item h3 {
+    font-size: 0.95rem;
+  }
+
+  .edu-item p {
+    font-size: 0.85rem;
+  }
+
+  .kontak-list {
+    font-size: 1.2rem;
+  }
+
+  #particles-js {
+    height: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#theme-toggle {
+  background: none;
+  border: none;
+  color: #60a5fa;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: transform 0.2s ease;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  color: #60a5fa;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.toggle-wrapper {
+  position: relative;
+  width: 80px;
+  height: 36px;
+  margin-left: 1rem;
+  display: inline-block;
+}
+
+.toggle-wrapper input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-label {
+  background-color: #cbd5e1;
+  border-radius: 999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  transition: background-color 0.3s;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.toggle-label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.toggle-wrapper input:checked + .toggle-label {
+  background-color: #0f172a;
+}
+
+.toggle-wrapper input:checked + .toggle-label::after {
+  transform: translateX(44px);
+}
+
+.sun, .moon {
+  font-size: 1.2rem;
+}
+body.light-mode {
+  background-color: #f9fafb;
+  color: #1e293b;
+}
+
+body.light-mode header {
+  background: linear-gradient(145deg, #f3f4f6, #e5e7eb);
+  border-bottom: 2px solid #3b82f6;
+}
+
+body.light-mode nav {
+  background-color: #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+body.light-mode nav a {
+  color: #1e3a8a;
+}
+
+body.light-mode nav a:hover {
+  background-color: #1e3a8a;
+  color: #fff;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode .skill-card p,
+body.light-mode .edu-item h3 {
+  color: #1e3a8a;
+}
+
+body.light-mode .project-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid #3b82f6;
+  color: #1e293b;
+}
+
+body.light-mode .kontak-list a {
+  color: #1e3a8a;
+}
+
+body.light-mode footer {
+  background-color: #e5e7eb;
+  color: #374151;
+  border-top: 2px solid #3b82f6;
+}
+
+body.light-mode #tentang p {
+  color: #334155;
+}

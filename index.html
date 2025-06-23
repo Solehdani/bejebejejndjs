@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Muhammad Solehudin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div id="particles-js"></div>
+  <header>
+    <h1>Muhammad Solehudin</h1>
+    <p>Developer Website Sederhana</p>
+  </header>
+
+ <nav>
+  <ul>
+    <li><a href="#tentang">Tentang</a></li>
+    <li><a href="#projek">Projek</a></li>
+    <li><a href="#skill">Skill</a></li>
+    <li><a href="#pendidikan">Pendidikan</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+  </ul>
+<div class="toggle-wrapper">
+  <input type="checkbox" id="mode-toggle" />
+  <label for="mode-toggle" class="toggle-label">
+    <span class="moon">🌕</span>
+    <span class="sun">🌤️</span>
+  </label>
+</div>
+ </nav>
+
+<section id="tentang">
+  <h2>Tentang Saya</h2>
+  <p>
+    Halo! Saya Muhammad Solehudin, seorang remaja lulusan SMK Aria Cendekia jurusan Rekayasa Perangkat Lunak dari Cianjur.
+    Saya memiliki ketertarikan besar di bidang pengembangan website dan game. Saya menyukai tantangan,
+    senang belajar hal baru, dan terbiasa bekerja secara kreatif maupun tim.
+  </p>
+  <p>
+    Selain ngoding, saya juga hobi jalan-jalan dan berlari. Cita-cita saya adalah menjadi developer profesional
+    yang bisa menginspirasi banyak orang lewat karya digital yang seru dan bermanfaat.
+  </p>
+</section>
+
+  <section id="projek">
+    <h2>Projek Saya</h2>
+    <div class="project-card">
+      <h3>Game XOX (Tic Tac Toe)</h3>
+      <p>Game sederhana 2 player berbasis logika dengan tampilan clean dan seru dimainkan.</p>
+    </div>
+    <div class="project-card">
+      <h3>Kalkulator Logika</h3>
+      <p>Kalkulator sederhana untuk operasi matematika dasar dengan logika JavaScript dasar.</p>
+    </div>
+    <div class="project-card">
+      <h3>Website Sederhana</h3>
+      <p>Projek HTML, CSS, JS sederhana dengan desain responsif dan fungsionalitas dasar.</p>
+    </div>
+  </section>
+  
+  <section id="skill">
+  <h2>Skill Saya</h2>
+  <div class="skills-container">
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+      <p>HTML</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+      <p>CSS</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+      <p>JavaScript</p>
+    </div>
+  </div>
+</section>
+  
+<section id="pendidikan">
+  <h2>Riwayat Pendidikan</h2>
+  <div class="edu-container">
+    <div class="edu-item">
+      <h3>2012 – 2013</h3>
+      <p>TK Negeri Pembina Cibinong</p>
+    </div>
+    <div class="edu-item">
+      <h3>2013 – 2019</h3>
+      <p>SDN Bungur Jaya 2</p>
+    </div>
+    <div class="edu-item">
+      <h3>2019 – 2022</h3>
+      <p>SMPN 1 Cikalongkulon</p>
+    </div>
+    <div class="edu-item">
+      <h3>2022 – 2025</h3>
+      <p>SMK Aria Cendekia – Jurusan RPL</p>
+    </div>
+  </div>
+</section>
+
+<section id="kontak">
+  <h2>Kontak</h2>
+   <div class="kontak-list">
+  <a href="mailto:sholehdani010@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+  <a href="https://github.com/Solehdani" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+  <a href="https://instagram.com/4k_moll" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://wa.me/6287856740909" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+   </div>
+   
+</section>
+
+  <footer>
+    <p>&copy; 2025 Muhammad Solehudin | "4k_moll"</p>
+  </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById('mode-toggle');
+
+    // Sync status awal toggle dengan class body
+    if (document.body.classList.contains("light-mode")) {
+      toggle.checked = false;
+    } else {
+      toggle.checked = true;
+    }
+
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle("light-mode");
+    });
+  });
+</script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
